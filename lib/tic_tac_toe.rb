@@ -112,7 +112,7 @@ end
     
 def play(board)
   input = turn(board)
-  if !over?(board)
+  until over?(board) == true
 end
 
   
