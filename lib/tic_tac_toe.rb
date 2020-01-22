@@ -118,8 +118,6 @@ def play(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
     puts "Cat\'s Game!"
-  else
-    
   end  
 end 
 
