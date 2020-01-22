@@ -48,18 +48,18 @@ def turn(board)
 end
 
 def turn_count(board)
-  turns = 0 
+  num_of_turns = 0 
   board.each do |positions|
     if positions == "X" || positions == "O"
-    turns += 1   
+    num_of_turns += 1   
     end
   end
-  return turns
+  return num_of_turns
 end 
 
 def current_player(board)
-  turns = turn_count(board)
-  if turns.even?
+  num_of_turns = turn_count(board)
+  if num_of_turns.even?
     return "X"
   else
     return "O"
